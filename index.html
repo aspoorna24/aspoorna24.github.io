@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A S Poorna</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Shadow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+         @media only screen and (max-width: 600px) {
+            #sidebar{
+                display: none;
+            }
+            #Scroll{
+                display: none;   
+            }
+            #Contact p{  
+             display: none;                                                                    
+         }        
+           
+         }
+body{
+  font-family: Poppins,sans-serif;
+  width: 100%;
+}
+
+#Education .col-md-2{
+  margin: 1px;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+#flex1{
+  display: flex;
+  align-items: stretch;
+}
+#Education .col-md-2:hover{
+    cursor: pointer;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#flex{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
+#Scroll{
+    padding-top: 15%;
+}
+#flex > i{
+    padding: 2px;
+}
+#social{
+  display: flex;
+  justify-content: center;
+}
+#social i{
+  padding: 2%;
+}
+#Contact {
+  border:solid 1px rgb(177, 177, 177);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 15px;
+   padding-top: 15px;
+}
+#About img{
+  transform:rotate(7deg);
+}
+#About img:hover{
+  cursor: pointer;
+  transform:rotate(0deg);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 40%;
+  margin: 10px;
+  text-align: center;
+  
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 5px;
+  padding: 15px;
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  left: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  opacity: 0.9;
+}
+.sticky:hover{
+  opacity: 1;
+  box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.2);
+}
+.sticky>a{
+  padding: 15px;
+  color: black;
+ 
+}
+.sticky>a:hover{
+  background-color: black;
+  border-radius: 50%;
+  color:white;
+}
+    </style>
+</head>
+  <body onload="typeWriter()">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+      <div class="row justify-content-center" id="Home">
+           <div class="col-xl-6 m-5 p-3">
+          <h1 class="text-center font-weight-bold">Hello, I am A S Poorna</h1>
+          <h3  id="demo" class="text-secondary text-center"></h3>
+          <br>
+          <center>
+          <button  type="button" class="btn btn-outline-dark ">Download CV <i class="fa fa-download"></i></button>
+          <button  type="button" class="btn btn-dark">Contact ME <i class="fa fa-mobile"></i></button></center>
+        </div>
+      </div>
+   
+
+    
+       <div class="row justify-content-center">
+        <div class="col-md-2 m-3" id="sidebar" >
+            <div id="flex">
+            <i class="fa fa-github-square" style="font-size:30px"></i>
+            <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+            <i class="fa fa-envelope-square" style="font-size:30px"></i>
+            </div>
+        </div>
+        <div class="col-md-3  m-3 p-3" style="text-align: center;"> <img src="/img/photo.jpg"  width="90%" height="300" style="border-radius: 50%;">
+        </div>
+        <div class="col-md-2 m-3" id="Scroll"> <p style="-webkit-transform: rotate(90deg); 
+            -moz-transform: rotate(90deg);    
+            transform:rotate(90deg);">Scroll Down <i class="fa fa-long-arrow-right"></i></p></div>
+       
+       </div>
+      <br>
+       <div class="container p-3" id="About">
+         <h2  class="text-center">About Me</h2>
+         <p class="text-secondary text-center">Get to know</p>
+         <div class="row justify-content-center">
+           <div class="col-md-4 p-5" style="text-align: center;">
+            <div style="background-color: #2d3436; background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);height:400px;border-radius: 10%;width:100%;">
+             <img src="img/profile.jpeg" style="object-fit: cover; width: 100%; height: 400px; border-radius: 10%;">
+            </div>
+           </div>
+           <div class="col-md-6 p-5">
+             <p class="p-3" style="font-size: large;text-align: justify;">I am A Software Engineer currently working in Persistent System Goa, from Past 1 and half year. I compeleted my graduation from KLE Dr M S Shesgiri College
+              belagavi. I have good experience in python and I am very intreseted in learning Full Stack Development and also Machine Learning. I have familier with AWS and Azure Cloud 
+              Services. I have worked as Inter in Bitmask Technology where i completely built the company website using Dajngo Framework.Other than that I work on Neo4j which a graph database. 
+              I have recently cleard the certification as Neo4j Developer.My Goal is to use the skills to solve the real life problems. I am currently learning Full Stack Development. My Hobbies <area shape="" coords="" href="" alt="">
+              Singing, reading novels and drawing.
+              <br>
+              
+             </p>
+            
+           </div>
+         </div>
+       </div>
+
+      <br>
+       <div class="container p-3" id="Education">
+        <div class="row p-3 justify-content-center">
+        <div class="col-md-3 m-3 p-5 bg-dark text-white rounded"> 
+         <i class='fa fa-graduation-cap' style='font-size:36px'></i>
+         <h2>Education</h2>
+         <p class="text-secondary">My Qualification</p>
+       </div>
+       
+       <div class="col-md-2 m-3 p-5"> <h2>SSLC</h2>
+         <p class="text-secondary">CVSK High School</p>
+         <span class="badge rounded-pill  bg-secondary">Score : 94.08%</span>
+       </div>
+       <div class="col-md-2 m-3 p-5"> <h2>PUC</h2>
+         <p class="text-secondary">Sharadhar PU College </p>
+         <span class="badge rounded-pill  bg-secondary">Score : 90.33%</span>
+       </div>
+       <div class="col-md-2 m-3 p-5"> <h2>BE</h2>
+         <p class="text-secondary">KLE Dr MSCET College</p>
+         <span class="badge rounded-pill  bg-secondary">Score : 8.15</span>
+       </div>                                                                                              
+       </div>
+ </div>
+    <br>
+
+    <div class="container" id="Experience">
+        <h2 style="text-align: center;">Experience</h2>
+        <p class="text-secondary text-center">My Works</p>
+        <div class="row justify-content-center">
+         
+          <div class="col-xl-6 m-3 p-3" id="flex1" style="border-left: 1px solid gray;">
+               <div style="flex-grow: 1;">
+                <img src="/img/logo.png" width="90px" height="100%" style="padding: 2%;">
+               </div>
+               <div style="flex-grow: 8;">
+                <h5>Software Engineer <br> <span style="font-size: 1rem;">Persistent System</span></h5>
+                <p class="text-secondary">Aug 2023 - Present <br><span style="font-size: 1rem;"><b>Skills : </b>Neo4j, Docker, Flask, GenAI</span></p>
+               </div>
+               
+        </div>
+        <div class="col-xl-6" id="flex1"><span style="border:1px solid gray; border-radius: 50%; padding: 5px; margin-left: -15px; background-color: gray;"> </span></div>
+        <div class="col-xl-6 m-3 p-3" id="flex1" style="border-left: 1px solid gray;">
+          <div style="flex-grow: 1;">
+           <img src="/img/logo2.png" width="90px" height="100%" style="padding: 2%;">
+          </div>
+          <div style="flex-grow: 8;">
+           <h5>Intern<br> <span style="font-size: 1rem;">BitMask Technology</span></h5>
+           <p class="text-secondary">Aug 2021 - Sept 2021   <br><span style="font-size: 1rem;"><b> Skills :</b>Django, Web Development</span></p>
+          </div>
+    </div>
+    
+        </div>
+      
+      </div>
+    </div>
+    
+    <br>
+    <div class="container pt-5">
+     <div class="row justify-content-center">
+      <h2 style="  text-align: center;">Skills</h2> 
+      <p class="text-secondary text-center">Worked On</p>
+      <div class="col-xl-5 m-3">
+        <div style=" border: solid 1px gray;border-radius: 15px;">
+      <h5 class="bg-dark text-white text-center p-5" style="border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;">Web Development related Skills</h5>
+       <div class="flex-container">
+        <div>
+          <i class="fa fa-html5" style="font-size:30px;"></i> <span style=" position: relative;top: -7px;"> <b>HTML</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Advanced</p>
+        </div>
+        <div>
+          <i class="fa fa-css3" style="font-size:30px;"></i> <span style=" position: relative;top: -7px;"> <b>CSS</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Advanced</p>
+        </div>
+        <div>
+          <i class="fa fa-file-code-o" style="font-size:30px;"></i> <span style=" position: relative;top: -7px;"> <b>JavaScript</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Advanced</p>
+        </div>  
+        <div>
+          <img src="/img/bootstrap-fill-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>bootstrap</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        <div>
+          <img src="/img/node-js-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Node.js</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Learning</p>
+        </div>
+        <div>
+          <i class="fa fa-code" style="font-size:30px;"></i> <span style=" position: relative;top: -7px;"> <b>React.js</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Learning</p>
+        </div>
+        <div>
+          <i class="fa fa-database" style="font-size:30px;"></i> <span style=" position: relative;top: -7px;"> <b>SQL</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        <div>
+          <img src="/img/flask-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Flask</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        <div>
+          <img src="/img/django-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Django</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+       </div>
+    </div>
+      </div>
+      <div class="col-xl-5 m-3">
+        <div  style=" border: solid 1px gray;border-radius: 15px;">
+      <h5 class="bg-dark text-white text-center p-5" style="border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;">Machine Learning and Other Skills</h5>
+      <div class="flex-container">
+        <div>
+          <img src="/img/python-127-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Python</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Advanced</p>
+        </div>
+        <div>
+          <img src="/img/machine-learning-model-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Machine Leaning</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Learning</p>
+        </div>
+        <div>
+          <img src="/img/graph-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Neo4j</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        <div>
+          <img src="/img/openai-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Gen AI</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Learning</p>
+        </div>
+        <div>
+          <img src="/img/docker-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>Docker</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        <div>
+          <img src="/img/github-142-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>GitHub</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        <div>
+          <img src="/img/aws-svgrepo-com.svg" width="35px" height="35px"> <span style=" position: relative;top: -7px;"> <b>AWS</b></span>
+          <p style="font-size: 10px;position: relative;left:20px">Experienced</p>
+        </div>
+        </div>   
+    </div>
+      </div>
+     </div>
+    </div>
+
+
+    <div class="container pt-5">
+        <h2 style="  text-align: center;"> Contact Me </h2>
+        <p class="text-secondary text-center">Let's Connect</p>
+       
+        <div class="row justify-content-center">
+          <div class="col  col-md-2">
+              <div  id="Contact">
+                <img src="img/email.png" height="25px" width="25px">
+                <h6>Email</h6>
+                <p>aspoorna@gmail.com</p>
+              </div>
+            
+          </div>
+          <div class="col  col-md-2">
+            <div  id="Contact"> 
+              <img src="img/call.png" height="25px" width="25px">
+              <h6>Call</h6>
+              <p>9141101578</p>
+            </div> 
+          </div>
+          <div class="col  col-md-2">
+             <div  id="Contact">
+              <img src="img/linkedin.png" height="25px" width="25px">
+              <h6>Linkedin</h6>
+              <p>poorna-a-s-3760641a2</p>
+            </div>
+  
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+          <div class="col-xl-6">
+          <form>
+            <div class="form-group">
+             
+              <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Your name"><br>
+              
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email"><br>
+              
+            </div>
+  
+            <div class="form-group">
+             
+              <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea><br>
+            </div>
+           
+            <button type="submit" class="btn btn-dark"> Send <i class="fa fa-send-o"></i></button>
+          </form>
+        </div>
+        </div>
+      </div>
+  
+      <div id="footer">
+       <hr>
+       <div id="social">
+        <i class="fa fa-github-square" style="font-size:36px"></i>
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+       </div>
+         <p style="text-align: center;color: gray;"> © 2023 A S Poorna. All rights reserved</p>
+      </div>
+      <div class="sticky">
+        <a href="#Home"><i class="fa fa-home"></i></a>
+        <a href="#About"><i class="fa fa-user" ></i></a>
+        <a href="#Education"><i class="fa fa-graduation-cap"></i></a>
+        <a href="#Experience"><i class="fa fa-building"></i></a>
+        <a href="#Contact"><i class="fa fa-comment"></i></a>
+      </div>
+      <script>
+        var i = 0;
+        var txt = "A Software Engineer  ";
+        
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+          }
+          else{
+            i=0;
+            document.getElementById("demo").innerHTML =""
+            typeWriter();
+          }
+          
+        }
+        </script>
+</body>
+</html>
