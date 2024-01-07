@@ -20,14 +20,7 @@
             #Contact p{  
              display: none;                                                                    
          }        
-             .carousel-inner {
-          display: flex;
-        }
-        .carousel-item {
-          margin-right: 0;
-          flex: 0 0 25%;
-          display: block;
-        }
+          
          }
 body{
   font-family: Poppins,sans-serif;
@@ -124,48 +117,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
               color:gray;
          }
 
-       .carousel-inner{
-        padding: 1em;
-    }
-    .card{
-        margin: 0 .5em;
-        border: solid 1px gray;
-        transition: all .5s ease-in-out;
-       
-    }
-    .card:hover{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        transform: translateY(-10px);
-        
-    }
-    .carousel-control-prev, .carousel-control-next{
-        background-color: #e1e1e1;
-        width: 6vh;
-        height: 6vh;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .card .img-wrapper {
-        max-width: 100%;
-        height: 13em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-     .card img{
-        max-height: 100%;
-        padding: 5px;
-      }
-      
+    
     </style>
 </head>
   <body onload="typeWriter()">
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <div class="row justify-content-center" id="Home">
+       <div class="row justify-content-center" id="Home">
            <div class="col-xl-6 m-5 p-3">
           <h1 class="text-center font-weight-bold">Hello, I am A S Poorna</h1>
           <h3  id="demo" class="text-secondary text-center"></h3>
@@ -358,54 +317,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      </div>
     </div>
     <br>
-    <div>
-     <h2 style="text-align: center;">Projects</h2> 
-      <div id="carouselExampleControls" class="carousel m-3 p-3">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-                <h5 class="card-title text-center p-3">SGPA Calculator</h5>
-                <img src="img/Project1.jpg" class="d-block w-100" alt="..." style="border-bottom: 1px solid black;border-top: 1px solid black;height:200px">
-                <div class="card-body">
-                    
-                    <p class="card-text">A Simple SGPA, CGPA and SGPA to Percentage converter application which is useful for engineering student.</p>
-                        <div class="p-3"><span class="badge border border-secondary text-secondary">HTML</span>
-                            <span class="badge border border-secondary text-secondary">CSS</span>
-                            <span class="badge border border-secondary text-secondary">JS</span>
-                            <span class="badge border border-secondary text-secondary">bootstrap</span></div>
-                            <div class="text-center"> <a href="https://github.com/aspoorna24/SGPA-CGPA-Calculator" class="btn btn-dark">GitHub</a> </div>
-                </div>
-                  
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-                <h5 class="card-title text-center p-3">Placement Analyzer</h5>
-                <img src="img/Project2.png" class="d-block w-100" alt="..." style="border-bottom: 1px solid black;border-top: 1px solid black;height:200px">
-                <div class="card-body">
-                    
-                    <p class="card-text">This is for student to understand about placements and package they can get depending on their performance</p>
-                        <div class="p-3"><span class="badge border border-secondary text-secondary">HTML</span>
-                            <span class="badge border border-secondary text-secondary">Bootstrap</span>
-                            <span class="badge border border-secondary text-secondary">ML</span></div>
-                            <div class="text-center"> <a href="https://github.com/aspoorna24/Placement-Analyzer" class="btn btn-dark">GitHub</a> </div>
-                </div>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <br>
-</div>
     <div class="container pt-5">
         <h2 style="  text-align: center;"> Contact Me </h2>
         <p class="text-secondary text-center">Let's Connect</p>
@@ -494,41 +405,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           
         }
 
-        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-        var cardWidth = $(".carousel-item").width();
-        var scrollPosition = 0;
-        $(".carousel-control-next").on("click", function () {
-            if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
-              scrollPosition += cardWidth;  //update scroll position
-              $(".carousel-inner").animate({ scrollLeft: scrollPosition },600); //scroll left
-            }
-          });
-          $(".carousel-control-prev").on("click", function () {
-            if (scrollPosition > 0) {
-              scrollPosition -= cardWidth;
-              $(".carousel-inner").animate(
-                { scrollLeft: scrollPosition },
-                600
-              );
-            }
-          });
- var multipleCardCarousel = document.querySelector(
-  "#carouselExampleControls"
-);
-
-if (window.matchMedia("(min-width: 768px)").matches) {
-  //rest of the code
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false
-  });
-} else {
-  $(multipleCardCarousel).addClass("slide");
-}
-var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false,
-    wrap: false,
-  });
-  
         </script>
 </body>
 </html>
